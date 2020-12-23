@@ -1,0 +1,107 @@
+{
+  "sqlIds": ["1-1","1-2","1-3","1-4","1-5","1-6","1-7","1-9",
+    "1-10","1-11","1-12","1-13","1-14","1-15","1-16","1-17","1-18","1-19"],
+  "1-1": {
+    "sqlName": "procedure_user_profit_d.sql",
+    "params": ["mx_sec","batch_int_date"]
+  },
+  "1-2": {
+    "sqlName": "procedure_user_hold_stock_cycle.sql",
+    "params": ["batch_int_date","last_year_trans_day","batch_date","last_year_trans_day",
+      "batch_date","last_int_year_trans_day", "batch_int_date","last_year_trans_day",
+      "batch_date", "last_int_year_trans_day", "batch_int_date","batch_date"]
+  },
+  "1-3": {
+    "sqlName": "procedure_user_max_retracement.sql",
+    "params": ["batch_int_date","last_year_trans_day","batch_date",
+      "last_int_year_trans_day","batch_int_date",
+      "last_int_year_trans_day","batch_int_date","last_int_year_trans_day","batch_int_date"]
+  },
+  "1-4": {
+    "sqlName": "procedure_user_stock_position.sql",
+    "params": ["mx_attr","batch_int_date","mx_attr","batch_int_date"]
+  },
+  "1-5": {
+    "sqlName": "procedure_user_profitability.sql",
+    "params": ["batch_int_date","last_year_trans_day","batch_date","last_int_year_trans_day","batch_int_date"
+    ,"last_int_year_trans_day","batch_int_date"]
+  },
+  "1-6": {
+    "sqlName": "procedure_user_stock_trade.sql",
+    "params": ["batch_int_date","last_year_trans_day","batch_date","last_int_year_trans_day","batch_int_date"]
+  },
+  "1-7": {
+    "sqlName": "procedure_user_type.sql",
+    "params": ["batch_int_date","batch_date","batch_int_date","batch_int_date","bfM,batch_int_date,1",
+      "batch_int_date","bfM,batch_int_date,1","batch_int_date","batch_int_date"]
+  },
+  "1-9": {
+    "sqlName": "procedure_fund_tag_matrix_base.sql",
+    "params": ["batch_int_date","ch_date"]
+  },
+  "1-10": {
+    "sqlName": "procedure_user_risk_tolerance.sql",
+    "params": ["batch_int_date","batch_int_date","batch_int_date","rm_date"]
+  },
+  "1-11": {
+    "sqlName": "procedure_user_hold_stock_preference.sql",
+    "params": ["batch_int_date","batch_date","BEFORE,batch_date,100","batch_date","BEFORE,batch_int_date,100","batch_int_date",
+      "batch_date","batch_int_date"]
+  },
+  "1-12": {
+    "sqlName": "procedure_user_hold_fund_preference.sql",
+    "params": ["batch_int_date","batch_date","BEFORE,batch_date,100","batch_date","BEFORE,batch_int_date,100","batch_int_date",
+      "batch_date","batch_int_date"]
+  },
+  "1-13": {
+    "sqlName": "procedure_user_tag_preference.sql",
+    "params": ["batch_int_date","ch_date","batch_int_date","ch_date","batch_int_date"]
+  },
+  "1-14": {
+    "sqlName": "procedure_user_buy_psbility_old.sql",
+    "params": ["batch_int_date",
+      "batch_date","batch_date","batch_date","batch_date","batch_date",
+      "batch_int_date","batch_int_date","batch_int_date","batch_date",
+      "bfM,batch_int_date,3","batch_int_date",
+      "bfM,batch_date,3","batch_date",
+      "batch_int_date","batch_date",
+      "batch_date","batch_int_date",
+      "BEFORE,batch_date,14","batch_date",
+      "BEFORE,batch_int_date,14","batch_int_date",
+      "batch_date","rm_date",
+      "batch_date","batch_int_date",
+      "BEFORE,batch_int_date,7","batch_int_date",
+      "BEFORE,batch_int_date,7","batch_int_date","batch_int_date"
+    ,"batch_int_date","batch_int_date"]
+  },
+  "1-15": {
+    "sqlName": "procedure_user_buy_psbility.sql",
+    "params": ["batch_int_date","batch_date","batch_date","batch_date","batch_date","batch_date",
+      "batch_int_date","batch_date","batch_int_date","ch_date",
+      "BEFORE,batch_date,14","batch_date",
+      "BEFORE,batch_int_date,14","batch_int_date",
+      "batch_date","rm_date","batch_date","batch_int_date",
+      "BEFORE,batch_int_date,7","batch_int_date", "BEFORE,batch_int_date,7","batch_int_date",
+      "batch_int_date",
+      "batch_int_date","batch_int_date"]
+  },
+  "1-16": {
+    "sqlName": "procedure_user_buy_funds.sql",
+    "params": ["batch_int_date","batch_date","batch_int_date"]
+  },
+  "1-17": {
+    "sqlName": "procedure_user_buy_fund_type.sql",
+    "params": ["batch_int_date","ch_date","batch_int_date","batch_int_date"]
+  },
+  "1-18": {
+    "sqlName": "procedure_user_like_fund_type.sql",
+    "params": ["batch_int_date","batch_int_date","ch_date","batch_int_date","batch_date","batch_int_date",
+      "batch_int_date","batch_int_date"]
+  },
+  "1-19": {
+    "sqlName": "procedure_user_profile_result.sql",
+    "params": ["batch_int_date","batch_int_date","batch_int_date","batch_int_date","batch_int_date",
+      "batch_int_date","batch_int_date"]
+  }
+}
+

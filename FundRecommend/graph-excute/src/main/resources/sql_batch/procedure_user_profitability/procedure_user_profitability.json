@@ -1,0 +1,22 @@
+{
+  "name": "procedure_user_profitability",
+  "description":"客户收益",
+  "fileUrl": "",
+  "hiveParams":[],
+  "dropPartition":[
+    "ALTER TABLE temp.tmp_jjtj_t_user_profitability DROP IF EXISTS PARTITION (init_date= ?)"
+  ],
+  "content": [
+    {
+      "index": 0,
+      "descripton" :"客户收益",
+      "fromFile": true,
+      "fileName": "procedure_user_profitability.sql",
+      "sql": "",
+      "parameters": ["batch_int_date","last_year_trans_day","batch_date",
+
+        "last_int_year_trans_day","batch_int_date"
+      ,"last_int_year_trans_day","batch_int_date"]
+    }
+  ]
+}

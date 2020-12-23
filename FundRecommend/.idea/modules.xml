@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GraphSchedule.iml" filepath="$PROJECT_DIR$/GraphSchedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graph-excute/graph-excute.iml" filepath="$PROJECT_DIR$/graph-excute/graph-excute.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recom-algo/recom-algo.iml" filepath="$PROJECT_DIR$/recom-algo/recom-algo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recom-common/recom-common.iml" filepath="$PROJECT_DIR$/recom-common/recom-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recom-redis/recom-redis.iml" filepath="$PROJECT_DIR$/recom-redis/recom-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recom-task/recom-task.iml" filepath="$PROJECT_DIR$/recom-task/recom-task.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,38 @@
+{
+  "name": "procedure_user_buy_psbility_old",
+  "description":"客户购买持营基金意愿评价",
+  "fileUrl": "",
+  "hiveParams":[],
+  "dropPartition":[
+    "ALTER TABLE temp.tmp_jjtj_t_user_buy_psbility_old DROP IF EXISTS PARTITION (init_date= ?)"
+  ],
+  "content": [
+    {
+      "index": 0,
+      "descripton" :"客户购买持营基金意愿评价",
+      "fromFile": true,
+      "fileName": "procedure_user_buy_psbility_old.sql",
+      "sql": "",
+      "parameters": ["batch_int_date",
+        "batch_date","batch_date","batch_date","batch_date","batch_date",
+
+        "batch_int_date","batch_int_date",
+
+        "batch_date",
+        "bfM,batch_int_date,3","batch_int_date",
+
+        "bfM,batch_date,3","batch_date",
+        "batch_int_date","batch_date",
+        "batch_date","batch_int_date",
+        "BEFORE,batch_date,14","batch_date",
+        "BEFORE,batch_int_date,14","batch_int_date",
+        "batch_date",
+        "batch_date","batch_int_date",
+
+        "BEFORE,batch_int_date,7","batch_int_date",
+        "BEFORE,batch_int_date,7","batch_int_date",
+        "batch_int_date",
+        "batch_int_date","batch_int_date","BEFORE,batch_int_date,7","batch_int_date"]
+    }
+  ]
+}

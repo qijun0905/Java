@@ -1,0 +1,19 @@
+{
+  "name": "procedure_user_profit_d",
+  "description":"每日收益",
+  "fileUrl": "",
+  "hiveParams":[],
+  "dropPartition":[
+    "ALTER TABLE temp.tmp_jjtj_t_user_profit_d DROP IF EXISTS PARTITION (init_date= ?)"
+  ],
+  "content": [
+    {
+      "index": 0,
+      "descripton" :"每日收益",
+      "fromFile": true,
+      "fileName": "procedure_user_profit_d.sql",
+      "sql": "",
+      "parameters": ["max_profit_d","batch_int_date"]
+    }
+  ]
+}

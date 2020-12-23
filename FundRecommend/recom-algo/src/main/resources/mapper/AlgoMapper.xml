@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dfund.recom.algo.mapper.AlgoMapper">
+
+
+    <select id="selectAlgoByCondition" resultType="com.dfund.recom.algo.entity.Algorithm">
+        select algorithm_id as algorithmId,algorithm_name as algorithmName,algorithm_vision as algorithmVision,
+        algorithm_type as algorithmType,apply_client_scope as applyClientScope,creater as creater,
+        create_Time as createTime,algorithm_description as algorithmDescription,algorithm_state as algorithmState,
+        python_url as pythonUrl,pythonfile as pythonfile
+        from algorithm_baseinfo
+        <where>
+            <if test="algorithm.algorithmName != null">
+                and algorithm_name like CONCAT("%",#{algorithm.algorithmName,jdbcType=VARCHAR},"%")
+            </if>
+            <if test="algorithm.algorithmVision != null">
+                and algorithm_vision = #{algorithm.algorithmVision,jdbcType=VARCHAR}
+            </if>
+            <if test="algorithm.algorithmType != null">
+                and algorithm_type = #{algorithm.algorithmType,jdbcType=VARCHAR}
+            </if>
+            <if test="algorithm.creater != null">
+                and creater like CONCAT("%",#{algorithm.creater,jdbcType=VARCHAR},"%")
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+    <update id="updByAlgoId" >
+        update algorithm_baseinfo
+        <set>
+            <if test="algorithm.algorithmName!=null">
+                algorithm_name=#{algorithm.algorithmName,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.algorithmVision!=null">
+                algorithm_vision=#{algorithm.algorithmVision,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.algorithmType != null">
+                algorithm_type = #{algorithm.algorithmType,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.applyClientScope != null">
+                apply_client_scope = #{algorithm.applyClientScope,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.algorithmDescription != null">
+                algorithm_description = #{algorithm.algorithmDescription,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.updUser != null">
+                upd_user = #{algorithm.updUser,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.updTime != null">
+                upd_time = #{algorithm.updTime,jdbcType=DATE},
+            </if>
+            <if test="algorithm.pythonfile != null">
+                pythonfile = #{algorithm.pythonfile,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.pythonUrl != null">
+                python_url = #{algorithm.pythonUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.modelfile != null">
+                modelfile = #{algorithm.modelfile,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.modelUrl != null">
+                model_url = #{algorithm.modelUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="algorithm.algorithmState != null">
+                algorithm_state = #{algorithm.algorithmState,jdbcType=VARCHAR},
+            </if>
+        </set>
+        WHERE algorithm_id =#{algorithm.algorithmId,jdbcType=BIGINT}
+    </update>
+
+    <insert id="insertAlgo" parameterType="com.dfund.recom.algo.entity.Algorithm" useGeneratedKeys="true" keyProperty="algorithmId">
+        INSERT INTO algorithm_baseinfo
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test='algorithmName != null and algorithmName != "" '>
+                algorithm_name,
+            </if>
+            <if test='algorithmVision != null and algorithmVision != "" '>
+                algorithm_vision,
+            </if>
+            <if test='algorithmType != null and algorithmType != "" '>
+                algorithm_type,
+            </if>
+            <if test='applyClientScope != null and applyClientScope != "" '>
+                apply_client_scope,
+            </if>
+            <if test='creater != null and creater != "" '>
+                creater,
+            </if>
+            <if test='algorithmDescription != null and algorithmDescription != "" '>
+                algorithm_description,
+            </if>
+            <if test='algorithmState != null and algorithmState != "" '>
+                algorithm_state,
+            </if>
+            <if test='pythonfile != null and pythonfile != "" '>
+                pythonfile,
+            </if>
+            <if test='pythonUrl != null and pythonUrl != "" '>
+                python_url,
+            </if>
+            <if test='modelfile != null and modelfile != "" '>
+                modelfile,
+            </if>
+            <if test='modelUrl != null and modelUrl != "" '>
+                model_url,
+            </if>
+            <if test='initDate != null '>
+                init_date,
+            </if>
+        </trim>
+
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test='algorithmName != null and algorithmName != "" '>
+                #{algorithmName, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmVision != null and algorithmVision != "" '>
+                #{algorithmVision, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmType != null and algorithmType != "" '>
+                #{algorithmType, jdbcType=VARCHAR},
+            </if>
+            <if test='applyClientScope != null and applyClientScope != "" '>
+                #{applyClientScope, jdbcType=VARCHAR},
+            </if>
+            <if test='creater != null and creater != "" '>
+                #{creater, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmDescription != null and algorithmDescription != "" '>
+                #{algorithmDescription, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmState != null and algorithmState != "" '>
+                #{algorithmState, jdbcType=VARCHAR},
+            </if>
+            <if test='pythonfile != null and pythonfile != "" '>
+                #{pythonfile, jdbcType=VARCHAR},
+            </if>
+            <if test='pythonUrl != null and pythonUrl != "" '>
+                #{pythonUrl, jdbcType=VARCHAR},
+            </if>
+            <if test='modelfile != null and modelfile != "" '>
+                #{modelfile, jdbcType=VARCHAR},
+            </if>
+            <if test='modelUrl != null and modelUrl != "" '>
+                #{modelUrl, jdbcType=VARCHAR},
+            </if>
+            <if test='initDate != null '>
+                #{initDate, jdbcType=BIGINT},
+            </if>
+        </trim>
+    </insert>
+
+</mapper>

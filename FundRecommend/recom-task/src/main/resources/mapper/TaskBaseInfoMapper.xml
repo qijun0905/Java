@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dfund.recom.task.mapper.TaskBaseInfoMapper">
+
+    <select id="selectByCondition" resultType="com.dfund.recom.task.entity.TaskInfo">
+        select task_id as taskId,task_name as taskName,task_type as taskType,
+        trigger_type as triggerType,task_sdate as taskSdate,task_edate as taskEdate,
+        istdate as istdate,trigger_time as triggerTime,client_scope as clientScope,
+        reject_client as rejectClient,recom_num_up as recomNumUp,series_code as seriesCode,
+        series_name as seriesName,algorithm_vision as algorithmVision,algorithm_name as algorithmName,
+        algorithm_id as algorithmId,creater,create_time as createTime,task_description as taskDescription,
+        upd_user as updUser,upd_time as updTime,init_date as initDate,is_del as isDel
+        from task_baseinfo
+        <where>
+            is_del = '0'
+            <if test='taskName != null and taskName != "" '>
+                and task_name like CONCAT("%",#{taskName,jdbcType=VARCHAR},"%")
+            </if>
+            <if test=' taskType != null and taskType != "" '>
+                and task_type = #{taskType,jdbcType=VARCHAR}
+            </if>
+            <if test='clientScope != null and clientScope != "" '>
+                and client_scope = #{clientScope,jdbcType=VARCHAR}
+            </if>
+            <if test='algorithmName != null and algorithmName != "" '>
+                and algorithm_name like CONCAT("%",#{algorithmName,jdbcType=VARCHAR},"%")
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+
+    <insert id="insertSelective" useGeneratedKeys="true" keyProperty="taskId">
+        insert into task_baseinfo
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test='taskName != null and taskName != "" '>
+                task_name,
+            </if>
+            <if test='taskType != null and taskType != "" '>
+                task_type,
+            </if>
+            <if test='triggerType != null and triggerType != "" '>
+                trigger_type,
+            </if>
+            <if test="taskSdate != null ">
+                task_sdate,
+            </if>
+            <if test="taskEdate != null  ">
+                task_edate,
+            </if>
+            <if test='istdate != null and istdate != "" '>
+                istdate,
+            </if>
+            <if test='triggerTime != null and triggerTime != "" '>
+                trigger_time,
+            </if>
+            <if test='clientScope != null and clientScope != "" '>
+                client_scope,
+            </if>
+            <if test='rejectClient != null and rejectClient != "" '>
+                reject_client,
+            </if>
+            <if test='recomNumUp != null and recomNumUp != "" '>
+                recom_num_up,
+            </if>
+            <if test='seriesCode != null and seriesCode != "" '>
+                series_code,
+            </if>
+            <if test='seriesName != null and seriesName != "" '>
+                series_name,
+            </if>
+            <if test='algorithmVision != null and algorithmVision != "" '>
+                algorithm_vision,
+            </if>
+            <if test='algorithmName != null and algorithmName != "" '>
+                algorithm_name,
+            </if>
+            <if test='algorithmId != null and algorithmId != "" '>
+                algorithm_id,
+            </if>
+            <if test='creater != null and creater != "" '>
+                creater,
+            </if>
+            <if test='taskDescription != null and taskDescription != "" '>
+                task_description,
+            </if>
+            <if test='initDate != null '>
+                init_date,
+            </if>
+        </trim>
+
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test='taskName != null and taskName != "" '>
+                #{taskName, jdbcType=VARCHAR},
+            </if>
+            <if test='taskType != null and taskType != "" '>
+                #{taskType, jdbcType=VARCHAR},
+            </if>
+            <if test='triggerType != null and triggerType != "" '>
+                #{triggerType, jdbcType=VARCHAR},
+            </if>
+            <if test='taskSdate != null '>
+                #{taskSdate, jdbcType=DATE},
+            </if>
+            <if test='taskEdate != null '>
+                #{taskEdate, jdbcType=DATE},
+            </if>
+            <if test='istdate != null and istdate != "" '>
+                #{istdate, jdbcType=VARCHAR},
+            </if>
+            <if test='triggerTime != null and triggerTime != "" '>
+                #{triggerTime, jdbcType=VARCHAR},
+            </if>
+            <if test='clientScope != null and clientScope != "" '>
+                #{clientScope, jdbcType=VARCHAR},
+            </if>
+            <if test='rejectClient != null and rejectClient != "" '>
+                #{rejectClient, jdbcType=BIGINT},
+            </if>
+            <if test='recomNumUp != null and recomNumUp != "" '>
+                #{recomNumUp, jdbcType=BIGINT},
+            </if>
+            <if test='seriesCode != null and seriesCode != "" '>
+                #{seriesCode, jdbcType=BIGINT},
+            </if>
+            <if test='seriesName != null and seriesName != "" '>
+                #{seriesName, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmVision != null and algorithmVision != "" '>
+                #{algorithmVision, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmName != null and algorithmName != "" '>
+                #{algorithmName, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmId != null and algorithmId != "" '>
+                #{algorithmId, jdbcType=VARCHAR},
+            </if>
+            <if test='creater != null and creater != "" '>
+                #{creater, jdbcType=VARCHAR},
+            </if>
+            <if test='taskDescription != null and taskDescription != "" '>
+                #{taskDescription, jdbcType=VARCHAR},
+            </if>
+            <if test='initDate != null '>
+                #{initDate, jdbcType=BIGINT},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="updateTaskInfoByTaskId">
+        update task_baseinfo
+        <set>
+            <if test='taskName != null and taskName != "" '>
+                task_name=#{taskName, jdbcType=VARCHAR},
+            </if>
+            <if test='taskType != null and taskType != "" '>
+                task_type=#{taskType, jdbcType=VARCHAR},
+            </if>
+            <if test='triggerType != null and triggerType != "" '>
+                trigger_type=#{triggerType, jdbcType=VARCHAR},
+            </if>
+            <if test='taskSdate != null '>
+                task_sdate=#{taskSdate, jdbcType=DATE},
+            </if>
+            <if test='taskEdate != null '>
+                task_edate=#{taskEdate, jdbcType=DATE},
+            </if>
+            <if test='istdate != null and istdate != "" '>
+                istdate=#{istdate, jdbcType=VARCHAR},
+            </if>
+            <if test='triggerTime != null and triggerTime != "" '>
+                trigger_time=#{triggerTime, jdbcType=VARCHAR},
+            </if>
+            <if test='clientScope != null and clientScope != "" '>
+                client_scope=#{clientScope, jdbcType=VARCHAR},
+            </if>
+            <if test='rejectClient != null and rejectClient != "" '>
+                reject_client=#{rejectClient, jdbcType=VARCHAR},
+            </if>
+            <if test='recomNumUp != null and recomNumUp != "" '>
+                recom_num_up=#{recomNumUp, jdbcType=BIGINT},
+            </if>
+            <if test='seriesCode != null and seriesCode != "" '>
+                series_code=#{seriesCode, jdbcType=BIGINT},
+            </if>
+            <if test='seriesName != null and seriesName != "" '>
+                series_name=#{seriesName, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmVision != null and algorithmVision != "" '>
+                algorithm_vision=#{algorithmVision, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmName != null and algorithmName != "" '>
+                algorithm_name=#{algorithmName, jdbcType=VARCHAR},
+            </if>
+            <if test='algorithmId != null and algorithmId != "" '>
+                algorithm_id=#{algorithmId, jdbcType=VARCHAR},
+            </if>
+            <if test='updUser != null and updUser != "" '>
+                upd_user=#{updUser, jdbcType=VARCHAR},
+            </if>
+            <if test='taskDescription != null and taskDescription != "" '>
+                task_description=#{taskDescription, jdbcType=VARCHAR},
+            </if>
+            <if test='isDel != null and isDel != "" '>
+                is_del=#{isDel, jdbcType=VARCHAR},
+            </if>
+            <if test='updTime != null '>
+                upd_time=#{updTime, jdbcType=DATE},
+            </if>
+        </set>
+        where task_id = #{taskId, jdbcType=VARCHAR}
+    </update>
+
+</mapper>

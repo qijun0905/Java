@@ -1,0 +1,40 @@
+[2020-12-23 13:36:23] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- Starting AlgoApplication on MacBook-Pro.local with PID 1656 (/Users/wangqijun/IdeaProjects/FundRecommend-main/recom-algo/target/classes started by wangqijun in /Users/wangqijun/IdeaProjects/FundRecommend-main)
+[2020-12-23 13:36:23] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- The following profiles are active: dev
+[2020-12-23 13:36:24] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8090"]
+[2020-12-23 13:36:24] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2020-12-23 13:36:24] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.31]
+[2020-12-23 13:36:25] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2020-12-23 13:36:25] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8090"]
+[2020-12-23 13:36:25] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- Started AlgoApplication in 3.008 seconds (JVM running for 4.115)
+[2020-12-23 13:38:56] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-12-23 13:38:56] -- [INFO ]: [com.dfund.recom.algo.web.AlgoController] -- 算法管理条件查询，str null,type null, creater null
+[2020-12-23 13:38:56] -- [INFO ]: [com.zaxxer.hikari.HikariDataSource] -- HikariPool-1 - Starting...
+[2020-12-23 13:54:00] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- Starting AlgoApplication on MacBook-Pro.local with PID 1821 (/Users/wangqijun/IdeaProjects/FundRecommend-main/recom-algo/target/classes started by wangqijun in /Users/wangqijun/IdeaProjects/FundRecommend-main)
+[2020-12-23 13:54:00] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- The following profiles are active: dev
+[2020-12-23 13:54:01] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8090"]
+[2020-12-23 13:54:01] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2020-12-23 13:54:01] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.31]
+[2020-12-23 13:54:01] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2020-12-23 13:54:02] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8090"]
+[2020-12-23 13:54:02] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- Started AlgoApplication in 2.409 seconds (JVM running for 2.974)
+[2020-12-23 13:54:15] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-12-23 13:54:15] -- [INFO ]: [com.dfund.recom.algo.web.AlgoController] -- 算法管理条件查询，str null,type null, creater null
+[2020-12-23 13:54:15] -- [INFO ]: [com.zaxxer.hikari.HikariDataSource] -- HikariPool-1 - Starting...
+[2020-12-23 14:13:31] -- [INFO ]: [com.dfund.recom.algo.web.AlgoController] -- 算法管理条件查询，str null,type null, creater null
+[2020-12-23 14:13:31] -- [INFO ]: [com.zaxxer.hikari.HikariDataSource] -- HikariPool-1 - Starting...
+[2020-12-23 14:14:17] -- [INFO ]: [com.dfund.recom.algo.web.AlgoController] -- 算法管理条件查询，str null,type null, creater null
+[2020-12-23 14:14:17] -- [INFO ]: [com.zaxxer.hikari.HikariDataSource] -- HikariPool-1 - Starting...
+[2020-12-23 14:16:18] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- Starting AlgoApplication on MacBook-Pro.local with PID 1917 (/Users/wangqijun/IdeaProjects/FundRecommend-main/recom-algo/target/classes started by wangqijun in /Users/wangqijun/IdeaProjects/FundRecommend-main)
+[2020-12-23 14:16:18] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- The following profiles are active: dev
+[2020-12-23 14:16:19] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8090"]
+[2020-12-23 14:16:19] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2020-12-23 14:16:19] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.31]
+[2020-12-23 14:16:19] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2020-12-23 14:16:20] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8090"]
+[2020-12-23 14:16:20] -- [INFO ]: [com.dfund.recom.algo.AlgoApplication] -- Started AlgoApplication in 2.053 seconds (JVM running for 2.717)
+[2020-12-23 14:16:52] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-12-23 14:16:52] -- [INFO ]: [com.dfund.recom.algo.web.AlgoController] -- 算法管理条件查询，str null,type null, creater null
+[2020-12-23 14:16:52] -- [INFO ]: [com.zaxxer.hikari.HikariDataSource] -- HikariPool-1 - Starting...
+[2020-12-23 14:16:52] -- [INFO ]: [com.zaxxer.hikari.HikariDataSource] -- HikariPool-1 - Start completed.
+[2020-12-23 15:38:59] -- [INFO ]: [com.zaxxer.hikari.HikariDataSource] -- HikariPool-1 - Shutdown initiated...
+[2020-12-23 15:38:59] -- [INFO ]: [com.zaxxer.hikari.HikariDataSource] -- HikariPool-1 - Shutdown completed.

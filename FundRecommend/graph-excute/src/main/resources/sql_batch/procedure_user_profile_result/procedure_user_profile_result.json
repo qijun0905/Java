@@ -1,0 +1,20 @@
+{
+  "name": "procedure_user_profile_result",
+  "description":"客户画像结果",
+  "fileUrl": "",
+  "hiveParams":[],
+  "dropPartition":[
+    "ALTER TABLE temp.tmp_jjtj_t_user_profile_result DROP IF EXISTS PARTITION (init_date= ?)"
+  ],
+  "content": [
+    {
+      "index": 0,
+      "descripton" :"客户画像结果",
+      "fromFile": true,
+      "fileName": "procedure_user_profile_result.sql",
+      "sql": "",
+      "parameters": ["batch_int_date","batch_date","BEFORE,batch_date,100","batch_date","BEFORE,batch_int_date,100","batch_int_date",
+        "batch_date","batch_int_date"]
+    }
+  ]
+}

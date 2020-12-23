@@ -1,0 +1,19 @@
+{
+  "name": "procedure_user_stock_trade",
+  "description":"是否股票交易客户",
+  "fileUrl": "",
+  "hiveParams":[],
+  "dropPartition":[
+    "ALTER TABLE temp.tmp_jjtj_t_user_profitability DROP IF EXISTS PARTITION (init_date= ?)"
+  ],
+  "content": [
+    {
+      "index": 0,
+      "descripton" :"是否股票交易客户",
+      "fromFile": true,
+      "fileName": "procedure_user_stock_trade.sql",
+      "sql": "",
+      "parameters": ["batch_int_date","last_year_trans_day","batch_date","last_int_year_trans_day","batch_int_date"]
+    }
+  ]
+}

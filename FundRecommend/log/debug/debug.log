@@ -1,0 +1,898 @@
+[2020-12-23 13:36:23] -- [DEBUG]: [com.dfund.recom.algo.AlgoApplication] -- Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+[2020-12-23 13:36:25] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[2020-12-23 13:36:25] -- [DEBUG]: [org.apache.ibatis.logging.LogFactory] -- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-12-23 13:36:25] -- [DEBUG]: [io.sentry.config.Lookup] -- Sentry configuration file not found in filesystem or classpath: 'sentry.properties'.
+[2020-12-23 13:36:25] -- [DEBUG]: [io.sentry.DefaultSentryClientFactory] -- Using an HTTPS connection to Sentry.
+[2020-12-23 13:36:26] -- [DEBUG]: [io.sentry.SentryClient] -- Adding 'io.sentry.event.helper.HttpEventBuilderHelper@67f3d192' to the list of builder helpers.
+[2020-12-23 13:36:26] -- [DEBUG]: [io.sentry.SentryClient] -- Adding 'io.sentry.event.helper.ContextBuilderHelper@2b10ace9' to the list of builder helpers.
+[2020-12-23 13:36:26] -- [DEBUG]: [io.sentry.SentryClientFactory] -- Configuring uncaught exception handler.
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- HikariPool-1 - configuration:
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- allowPoolSuspension.............false
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- autoCommit......................true
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- catalog.........................none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionInitSql...............none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTestQuery.............none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTimeout...............30000
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSource......................none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceClassName.............none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceJNDI..................none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceProperties............{password=<masked>}
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- driverClassName................."com.mysql.cj.jdbc.Driver"
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckProperties...........{}
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckRegistry.............none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- idleTimeout.....................600000
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- initializationFailTimeout.......1
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- isolateInternalQueries..........false
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- jdbcUrl.........................jdbc:mysql://localhost:3306/cos?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnet=true&allowPublicKeyRetrieval=true
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- leakDetectionThreshold..........0
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maxLifetime.....................1800000
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maximumPoolSize.................10
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricRegistry..................none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricsTrackerFactory...........none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- minimumIdle.....................10
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- password........................<masked>
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- poolName........................"HikariPool-1"
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- readOnly........................false
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- registerMbeans..................false
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- scheduledExecutor...............none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- schema..........................none
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- threadFactory...................internal
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- transactionIsolation............default
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- username........................"root"
+[2020-12-23 13:38:56] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- validationTimeout...............5000
+[2020-12-23 13:38:57] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Failed to create/setup connection: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-12-23 13:38:57] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Cannot acquire connection from data source
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.github.pagehelper.page.PageAutoDialect.getUrl(PageAutoDialect.java:175)
+	at com.github.pagehelper.page.PageAutoDialect.getDialect(PageAutoDialect.java:201)
+	at com.github.pagehelper.page.PageAutoDialect.initDelegateDialect(PageAutoDialect.java:97)
+	at com.github.pagehelper.PageHelper.skip(PageHelper.java:65)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:92)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy78.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.selectAlgoByCondition(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy66.selectAlgoByCondition(Unknown Source)
+	at com.dfund.recom.algo.service.AlgoService.getAlgolist(AlgoService.java:103)
+	at com.dfund.recom.algo.service.AlgoService$$FastClassBySpringCGLIB$$35aa4420.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dfund.recom.algo.service.AlgoService$$EnhancerBySpringCGLIB$$e572f384.getAlgolist(<generated>)
+	at com.dfund.recom.algo.web.AlgoController.selectAlgoList(AlgoController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-12-23 13:38:58] -- [DEBUG]: [io.sentry.event.EventBuilder$HostnameCache] -- Updating the hostname cache
+[2020-12-23 13:51:09] -- [DEBUG]: [io.sentry.connection.AsyncConnection] -- Gracefully shutting down Sentry async threads.
+[2020-12-23 13:51:09] -- [DEBUG]: [io.sentry.connection.AsyncConnection] -- Shutdown finished.
+[2020-12-23 13:54:00] -- [DEBUG]: [com.dfund.recom.algo.AlgoApplication] -- Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+[2020-12-23 13:54:01] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[2020-12-23 13:54:01] -- [DEBUG]: [org.apache.ibatis.logging.LogFactory] -- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-12-23 13:54:02] -- [DEBUG]: [io.sentry.config.Lookup] -- Sentry configuration file not found in filesystem or classpath: 'sentry.properties'.
+[2020-12-23 13:54:02] -- [DEBUG]: [io.sentry.DefaultSentryClientFactory] -- Using an HTTPS connection to Sentry.
+[2020-12-23 13:54:02] -- [DEBUG]: [io.sentry.SentryClient] -- Adding 'io.sentry.event.helper.HttpEventBuilderHelper@93f432e' to the list of builder helpers.
+[2020-12-23 13:54:02] -- [DEBUG]: [io.sentry.SentryClient] -- Adding 'io.sentry.event.helper.ContextBuilderHelper@28501a4b' to the list of builder helpers.
+[2020-12-23 13:54:02] -- [DEBUG]: [io.sentry.SentryClientFactory] -- Configuring uncaught exception handler.
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- HikariPool-1 - configuration:
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- allowPoolSuspension.............false
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- autoCommit......................true
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- catalog.........................none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionInitSql...............none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTestQuery.............none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTimeout...............30000
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSource......................none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceClassName.............none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceJNDI..................none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceProperties............{password=<masked>}
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- driverClassName................."com.mysql.cj.jdbc.Driver"
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckProperties...........{}
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckRegistry.............none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- idleTimeout.....................600000
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- initializationFailTimeout.......1
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- isolateInternalQueries..........false
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- jdbcUrl.........................jdbc:mysql://localhost:3306/cos?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnet=true&allowPublicKeyRetrieval=true
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- leakDetectionThreshold..........0
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maxLifetime.....................1800000
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maximumPoolSize.................10
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricRegistry..................none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricsTrackerFactory...........none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- minimumIdle.....................10
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- password........................<masked>
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- poolName........................"HikariPool-1"
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- readOnly........................false
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- registerMbeans..................false
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- scheduledExecutor...............none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- schema..........................none
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- threadFactory...................internal
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- transactionIsolation............default
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- username........................"root"
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- validationTimeout...............5000
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Failed to create/setup connection: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-12-23 13:54:15] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Cannot acquire connection from data source
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.github.pagehelper.page.PageAutoDialect.getUrl(PageAutoDialect.java:175)
+	at com.github.pagehelper.page.PageAutoDialect.getDialect(PageAutoDialect.java:201)
+	at com.github.pagehelper.page.PageAutoDialect.initDelegateDialect(PageAutoDialect.java:97)
+	at com.github.pagehelper.PageHelper.skip(PageHelper.java:65)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:92)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy80.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy66.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy67.selectAlgoByCondition(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy68.selectAlgoByCondition(Unknown Source)
+	at com.dfund.recom.algo.service.AlgoService.getAlgolist(AlgoService.java:103)
+	at com.dfund.recom.algo.service.AlgoService$$FastClassBySpringCGLIB$$35aa4420.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dfund.recom.algo.service.AlgoService$$EnhancerBySpringCGLIB$$f1f9de9b.getAlgolist(<generated>)
+	at com.dfund.recom.algo.web.AlgoController.selectAlgoList(AlgoController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-12-23 13:54:16] -- [DEBUG]: [io.sentry.event.EventBuilder$HostnameCache] -- Updating the hostname cache
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- HikariPool-1 - configuration:
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- allowPoolSuspension.............false
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- autoCommit......................true
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- catalog.........................none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionInitSql...............none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTestQuery.............none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTimeout...............30000
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSource......................none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceClassName.............none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceJNDI..................none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceProperties............{password=<masked>}
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- driverClassName................."com.mysql.cj.jdbc.Driver"
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckProperties...........{}
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckRegistry.............none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- idleTimeout.....................600000
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- initializationFailTimeout.......1
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- isolateInternalQueries..........false
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- jdbcUrl.........................jdbc:mysql://localhost:3306/cos?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnet=true&allowPublicKeyRetrieval=true
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- leakDetectionThreshold..........0
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maxLifetime.....................1800000
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maximumPoolSize.................10
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricRegistry..................none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricsTrackerFactory...........none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- minimumIdle.....................10
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- password........................<masked>
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- poolName........................"HikariPool-1"
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- readOnly........................false
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- registerMbeans..................false
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- scheduledExecutor...............none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- schema..........................none
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- threadFactory...................internal
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- transactionIsolation............default
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- username........................"root"
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- validationTimeout...............5000
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Failed to create/setup connection: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-12-23 14:13:31] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Cannot acquire connection from data source
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.github.pagehelper.page.PageAutoDialect.getUrl(PageAutoDialect.java:175)
+	at com.github.pagehelper.page.PageAutoDialect.getDialect(PageAutoDialect.java:201)
+	at com.github.pagehelper.page.PageAutoDialect.initDelegateDialect(PageAutoDialect.java:97)
+	at com.github.pagehelper.PageHelper.skip(PageHelper.java:65)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:92)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy80.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy66.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy67.selectAlgoByCondition(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy68.selectAlgoByCondition(Unknown Source)
+	at com.dfund.recom.algo.service.AlgoService.getAlgolist(AlgoService.java:103)
+	at com.dfund.recom.algo.service.AlgoService$$FastClassBySpringCGLIB$$35aa4420.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dfund.recom.algo.service.AlgoService$$EnhancerBySpringCGLIB$$f1f9de9b.getAlgolist(<generated>)
+	at com.dfund.recom.algo.web.AlgoController.selectAlgoList(AlgoController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- HikariPool-1 - configuration:
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- allowPoolSuspension.............false
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- autoCommit......................true
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- catalog.........................none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionInitSql...............none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTestQuery.............none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTimeout...............30000
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSource......................none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceClassName.............none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceJNDI..................none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceProperties............{password=<masked>}
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- driverClassName................."com.mysql.cj.jdbc.Driver"
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckProperties...........{}
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckRegistry.............none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- idleTimeout.....................600000
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- initializationFailTimeout.......1
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- isolateInternalQueries..........false
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- jdbcUrl.........................jdbc:mysql://localhost:3306/cos?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnet=true&allowPublicKeyRetrieval=true
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- leakDetectionThreshold..........0
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maxLifetime.....................1800000
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maximumPoolSize.................10
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricRegistry..................none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricsTrackerFactory...........none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- minimumIdle.....................10
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- password........................<masked>
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- poolName........................"HikariPool-1"
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- readOnly........................false
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- registerMbeans..................false
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- scheduledExecutor...............none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- schema..........................none
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- threadFactory...................internal
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- transactionIsolation............default
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- username........................"root"
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- validationTimeout...............5000
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Failed to create/setup connection: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-12-23 14:14:17] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Cannot acquire connection from data source
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.github.pagehelper.page.PageAutoDialect.getUrl(PageAutoDialect.java:175)
+	at com.github.pagehelper.page.PageAutoDialect.getDialect(PageAutoDialect.java:201)
+	at com.github.pagehelper.page.PageAutoDialect.initDelegateDialect(PageAutoDialect.java:97)
+	at com.github.pagehelper.PageHelper.skip(PageHelper.java:65)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:92)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy80.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy66.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy67.selectAlgoByCondition(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy68.selectAlgoByCondition(Unknown Source)
+	at com.dfund.recom.algo.service.AlgoService.getAlgolist(AlgoService.java:103)
+	at com.dfund.recom.algo.service.AlgoService$$FastClassBySpringCGLIB$$35aa4420.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dfund.recom.algo.service.AlgoService$$EnhancerBySpringCGLIB$$f1f9de9b.getAlgolist(<generated>)
+	at com.dfund.recom.algo.web.AlgoController.selectAlgoList(AlgoController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-12-23 14:16:01] -- [DEBUG]: [io.sentry.connection.AsyncConnection] -- Gracefully shutting down Sentry async threads.
+[2020-12-23 14:16:01] -- [DEBUG]: [io.sentry.connection.AsyncConnection] -- Shutdown finished.
+[2020-12-23 14:16:18] -- [DEBUG]: [com.dfund.recom.algo.AlgoApplication] -- Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+[2020-12-23 14:16:19] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[2020-12-23 14:16:19] -- [DEBUG]: [org.apache.ibatis.logging.LogFactory] -- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-12-23 14:16:20] -- [DEBUG]: [io.sentry.config.Lookup] -- Sentry configuration file not found in filesystem or classpath: 'sentry.properties'.
+[2020-12-23 14:16:20] -- [DEBUG]: [io.sentry.DefaultSentryClientFactory] -- Using an HTTPS connection to Sentry.
+[2020-12-23 14:16:20] -- [DEBUG]: [io.sentry.SentryClient] -- Adding 'io.sentry.event.helper.HttpEventBuilderHelper@67fc2aad' to the list of builder helpers.
+[2020-12-23 14:16:20] -- [DEBUG]: [io.sentry.SentryClient] -- Adding 'io.sentry.event.helper.ContextBuilderHelper@2dd8239' to the list of builder helpers.
+[2020-12-23 14:16:20] -- [DEBUG]: [io.sentry.SentryClientFactory] -- Configuring uncaught exception handler.
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- HikariPool-1 - configuration:
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- allowPoolSuspension.............false
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- autoCommit......................true
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- catalog.........................none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionInitSql...............none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTestQuery.............none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- connectionTimeout...............30000
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSource......................none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceClassName.............none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceJNDI..................none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- dataSourceProperties............{password=<masked>}
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- driverClassName................."com.mysql.cj.jdbc.Driver"
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckProperties...........{}
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- healthCheckRegistry.............none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- idleTimeout.....................600000
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- initializationFailTimeout.......1
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- isolateInternalQueries..........false
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- jdbcUrl.........................jdbc:mysql://localhost:3306/cos?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnet=true&allowPublicKeyRetrieval=true
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- leakDetectionThreshold..........0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maxLifetime.....................1800000
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- maximumPoolSize.................10
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricRegistry..................none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- metricsTrackerFactory...........none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- minimumIdle.....................10
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- password........................<masked>
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- poolName........................"HikariPool-1"
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- readOnly........................false
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- registerMbeans..................false
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- scheduledExecutor...............none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- schema..........................none
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- threadFactory...................internal
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- transactionIsolation............default
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- username........................"root"
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.HikariConfig] -- validationTimeout...............5000
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30658791
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.AlgoMapper.selectAlgoByCondition_COUNT] -- ==>  Preparing: SELECT count(0) FROM algorithm_baseinfo 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.AlgoMapper.selectAlgoByCondition_COUNT] -- ==> Parameters: 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60d22579
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21ef2f42
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.AlgoMapper.selectAlgoByCondition_COUNT] -- <==      Total: 1
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10040e9f
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41c0d00d
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.AlgoMapper.selectAlgoByCondition] -- ==>  Preparing: select algorithm_id as algorithmId,algorithm_name as algorithmName,algorithm_vision as algorithmVision, algorithm_type as algorithmType,apply_client_scope as applyClientScope,creater as creater, create_Time as createTime,algorithm_description as algorithmDescription,algorithm_state as algorithmState, python_url as pythonUrl,pythonfile as pythonfile from algorithm_baseinfo order by create_time desc LIMIT ? 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.AlgoMapper.selectAlgoByCondition] -- ==> Parameters: 10(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70bcadbf
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@458eed6c
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3be60af0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.AlgoMapper.selectAlgoByCondition] -- <==      Total: 10
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 21(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@690dea0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 18(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 17(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33bd4f90
+[2020-12-23 14:16:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 16(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 15(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 14(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 13(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 12(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 11(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==>  Preparing: select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType, factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor where algorithm_id = ? and is_del = '0' 
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- ==> Parameters: 10(Integer)
+[2020-12-23 14:16:52] -- [DEBUG]: [com.dfund.recom.algo.mapper.FactorMapper.selectByAlgoId] -- <==      Total: 0
+[2020-12-23 14:17:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:17:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:18:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:18:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:19:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:19:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:20:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:20:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:21:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:21:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:22:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:22:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:23:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:23:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:24:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:24:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:25:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:25:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:26:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:26:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:27:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:27:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:28:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:28:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:29:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:29:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:30:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:30:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:31:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:31:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:32:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:32:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:33:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:33:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:34:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:34:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:35:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:35:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:36:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:36:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:37:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:37:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:38:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:38:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:39:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:39:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:40:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:40:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:41:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:41:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:42:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:42:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:43:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:43:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:44:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:44:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:45:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:45:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:46:09] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3be60af0: (connection has passed maxLifetime)
+[2020-12-23 14:46:09] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ea9304a
+[2020-12-23 14:46:11] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@41c0d00d: (connection has passed maxLifetime)
+[2020-12-23 14:46:11] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f943a71
+[2020-12-23 14:46:19] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@21ef2f42: (connection has passed maxLifetime)
+[2020-12-23 14:46:19] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55e83096
+[2020-12-23 14:46:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:46:36] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@30658791: (connection has passed maxLifetime)
+[2020-12-23 14:46:36] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eef2dca
+[2020-12-23 14:46:42] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@690dea0: (connection has passed maxLifetime)
+[2020-12-23 14:46:42] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35f777dc
+[2020-12-23 14:46:42] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@70bcadbf: (connection has passed maxLifetime)
+[2020-12-23 14:46:42] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45f4ac57
+[2020-12-23 14:46:48] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@33bd4f90: (connection has passed maxLifetime)
+[2020-12-23 14:46:48] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20313f9f
+[2020-12-23 14:46:48] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@458eed6c: (connection has passed maxLifetime)
+[2020-12-23 14:46:48] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@610c35a4
+[2020-12-23 14:46:49] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@60d22579: (connection has passed maxLifetime)
+[2020-12-23 14:46:49] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50a7b788
+[2020-12-23 14:46:49] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@10040e9f: (connection has passed maxLifetime)
+[2020-12-23 14:46:49] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@123caeb
+[2020-12-23 14:46:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:47:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:47:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:48:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:48:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:49:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:49:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:50:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:50:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:51:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:51:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:52:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:52:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:53:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:53:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:54:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:54:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:55:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:55:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:56:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:56:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:57:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:57:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:58:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:58:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:59:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 14:59:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:00:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:00:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:01:22] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:01:52] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:02:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:02:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:03:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:03:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:04:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:04:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:05:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:05:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:06:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:06:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:07:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:07:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:08:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:08:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:09:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:09:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:10:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:10:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:11:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:11:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:12:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:12:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:13:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:13:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:14:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:14:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:15:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:15:48] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1f943a71: (connection has passed maxLifetime)
+[2020-12-23 15:15:48] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d0e74a8
+[2020-12-23 15:15:50] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5ea9304a: (connection has passed maxLifetime)
+[2020-12-23 15:15:50] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c337e93
+[2020-12-23 15:15:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:16:05] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@45f4ac57: (connection has passed maxLifetime)
+[2020-12-23 15:16:05] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35191fd1
+[2020-12-23 15:16:08] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3eef2dca: (connection has passed maxLifetime)
+[2020-12-23 15:16:08] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@742415ea
+[2020-12-23 15:16:09] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@55e83096: (connection has passed maxLifetime)
+[2020-12-23 15:16:09] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@459aa2c4
+[2020-12-23 15:16:14] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@35f777dc: (connection has passed maxLifetime)
+[2020-12-23 15:16:14] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1265e4c
+[2020-12-23 15:16:21] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@123caeb: (connection has passed maxLifetime)
+[2020-12-23 15:16:21] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f7f0613
+[2020-12-23 15:16:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:16:28] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@20313f9f: (connection has passed maxLifetime)
+[2020-12-23 15:16:28] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44b442a9
+[2020-12-23 15:16:43] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@50a7b788: (connection has passed maxLifetime)
+[2020-12-23 15:16:43] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d9eac8f
+[2020-12-23 15:16:47] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@610c35a4: (connection has passed maxLifetime)
+[2020-12-23 15:16:47] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ca3a6b4
+[2020-12-23 15:16:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:17:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:17:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:18:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:18:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:19:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:19:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:20:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:20:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:21:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:21:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:22:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:22:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:23:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:23:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:24:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:24:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:25:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:25:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:26:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:26:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:27:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:27:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:28:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:28:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:29:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:29:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:30:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:30:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:31:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:31:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:32:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:32:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:33:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:33:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:34:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:34:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:35:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:35:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:36:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:36:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:37:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:37:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:38:23] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:38:53] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:38:59] -- [DEBUG]: [io.sentry.connection.AsyncConnection] -- Gracefully shutting down Sentry async threads.
+[2020-12-23 15:38:59] -- [DEBUG]: [io.sentry.connection.AsyncConnection] -- Shutdown finished.
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2d0e74a8: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6c337e93: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@35191fd1: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@742415ea: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@459aa2c4: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1265e4c: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@f7f0613: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@44b442a9: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7d9eac8f: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.PoolBase] -- HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3ca3a6b4: (connection evicted)
+[2020-12-23 15:38:59] -- [DEBUG]: [com.zaxxer.hikari.pool.HikariPool] -- HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)

@@ -1,0 +1,19 @@
+{
+  "name": "procedure_user_buy_fund_type",
+  "description":"客户购买过的基金类型",
+  "fileUrl": "",
+  "hiveParams":[],
+  "dropPartition":[
+    "ALTER TABLE temp.tmp_jjtj_t_user_buy_fund_type DROP IF EXISTS PARTITION (init_date= ?)"
+  ],
+  "content": [
+    {
+      "index": 0,
+      "descripton" :"客户购买过的基金类型",
+      "fromFile": true,
+      "fileName": "procedure_user_buy_fund_type.sql",
+      "sql": "",
+      "parameters": ["batch_int_date","batch_int_date","batch_int_date","batch_int_date"]
+    }
+  ]
+}

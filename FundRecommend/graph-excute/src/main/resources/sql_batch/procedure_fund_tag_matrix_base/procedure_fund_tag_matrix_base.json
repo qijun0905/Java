@@ -1,0 +1,19 @@
+{
+  "name": "procedure_fund_tag_matrix_base",
+  "description":"基金标签转换",
+  "fileUrl": "",
+  "hiveParams":[],
+  "dropPartition":[
+    "ALTER TABLE temp.tmp_jjtj_t_fund_type_matrix_base DROP IF EXISTS PARTITION (init_date= ?)"
+  ],
+  "content": [
+    {
+      "index": 0,
+      "descripton" :"基金标签转换",
+      "fromFile": true,
+      "fileName": "procedure_fund_tag_matrix_base.sql",
+      "sql": "",
+      "parameters": ["batch_int_date","batch_int_date","batch_int_date","batch_int_date","batch_int_date"]
+    }
+  ]
+}

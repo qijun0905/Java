@@ -1,0 +1,25 @@
+{
+  "name": "procedure_user_type",
+  "description":"客户类型",
+  "fileUrl": "",
+  "hiveParams":[],
+  "dropPartition":[
+    "ALTER TABLE temp.tmp_jjtj_t_user_type DROP IF EXISTS PARTITION (init_date= ?)"
+  ],
+  "content": [
+    {
+      "index": 0,
+      "descripton" :"客户类型",
+      "fromFile": true,
+      "fileName": "procedure_user_type.sql",
+      "sql": "",
+      "parameters": ["batch_int_date","bfM,batch_int_date,6","batch_date",
+
+        "bfM,batch_int_date,6","batch_int_date",
+
+        "last_year_trans_day","batch_date","last_int_year_trans_day",
+        "batch_int_date","batch_int_date","bfM,batch_int_date,1","bfM,batch_int_date,1"
+      ]
+    }
+  ]
+}

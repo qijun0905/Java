@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dfund.recom.algo.mapper.FactorMapper">
+
+    <select id="selectByAlgoId" resultType="com.dfund.recom.algo.entity.Factor">
+        select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType,
+        factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor
+        where algorithm_id = #{algorithm.algorithmId,jdbcType=BIGINT} and is_del = '0'
+    </select>
+
+    <select id="selectByAlgoName" resultType="com.dfund.recom.algo.entity.Factor">
+        select algorithm_id as algorithmId,factor_id as factorId,factor_name as factorName,factor_type as factorType,
+        factor_table as factorTable,factor_column as factorColumn,init_date as initDate from algorithm_factor
+        where algorithm_name like CONCAT("%",#{algorithmName,jdbcType=VARCHAR},"%") and is_del = '0'
+    </select>
+
+    <insert id="insertSelective">
+        insert into algorithm_factor
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test='factorName != null and factorName != "" '>
+                factor_name,
+            </if>
+            <if test='factorType != null and factorType != "" '>
+                factor_type,
+            </if>
+            <if test='factorTable != null and factorTable != "" '>
+                factor_table,
+            </if>
+            <if test='factorColumn != null and factorColumn != "" '>
+                factor_column,
+            </if>
+            <if test='initDate != null and initDate != "" '>
+                init_date,
+            </if>
+        </trim>
+
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test='factorName != null and factorName != "" '>
+                #{factorName, jdbcType=VARCHAR},
+            </if>
+            <if test='factorType != null and factorType != "" '>
+                #{factorType, jdbcType=VARCHAR},
+            </if>
+            <if test='factorTable != null and factorTable != "" '>
+                #{factorTable, jdbcType=VARCHAR},
+            </if>
+            <if test='factorColumn != null and factorColumn != "" '>
+                #{factorColumn, jdbcType=VARCHAR},
+            </if>
+            <if test='initDate != null and initDate != "" '>
+                #{initDate, jdbcType=DATE},
+            </if>
+        </trim>
+
+    </insert>
+
+
+    <update id="updateByFactorId">
+        update algorithm_factor
+        <set>
+            <if test="factorName !=null">
+                factor_name=#{factorName,jdbcType=VARCHAR},
+            </if>
+            <if test="factorTable !=null">
+                factor_table=#{factorTable,jdbcType=VARCHAR},
+            </if>
+            <if test="factorColumn != null">
+                factor_column = #{factorColumn,jdbcType=VARCHAR},
+            </if>
+            <if test="updUser != null">
+                upd_user = #{updUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updTime != null">
+                upd_time = #{updTime,jdbcType=DATE},
+            </if>
+            <if test="isDel != null">
+                is_del = #{isDel,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where factor_id =  #{factorId,jdbcType=BIGINT}
+    </update>
+
+</mapper>
